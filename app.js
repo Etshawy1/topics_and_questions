@@ -10,5 +10,5 @@ require('./startup/ratelimit')(app);
 require('./startup/routes')(app);
 require('./startup/sanitization')(app);
 require('./startup/db')();
-
+global.topics_tree = new Map(Object.entries(require('./parse_input/output/topics_tree.json')));
 module.exports = { app, server };
