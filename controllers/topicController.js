@@ -22,6 +22,11 @@ exports.getQuestions = catchAsync(async (req, res, next) => {
 
 });
 
+/**
+ * recursive function to get all the sub topics of a topic
+ * @param {Number} topicId the id of the topic you want to get its subtree 
+ * @param {Array} topics the list of topics in the subtree of the provided topic
+ */
 function getSubTree(topicId, topics) {
   topics.push(topicId);
   directChildren = topics_tree.get(topicId.toString());

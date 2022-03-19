@@ -20,12 +20,3 @@ npm install
 ```bash
 npm run start
 ```
-
-## Funcitonal Documentation
-
-```bash
-npm run doc
-```
-
-then you can find the documentation in a folder created `./docs`
-
